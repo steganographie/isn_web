@@ -14,7 +14,7 @@ def index():
 
 @app.route('/SomeFunction')
 def SomeFunction():
-    nom_image = "Entrez le chemin de l'image avec son nom et format : "
+    nom_image = input("Entrez le chemin de l'image avec son nom et format : ")
     img = Image.open(nom_image)
     l, h = img.size
     r, g, b = img.split()
@@ -52,7 +52,7 @@ def SomeFunction():
         imgnew = Image.merge('RGB', (r, couleur_modifiee, b))
     if taille[0] == blue_sum:
         imgnew = Image.merge('RGB', (r, g, couleur_modifiee))
-    nom_repertoire = "Entrez le répertoire dans lequel vous souhaitez enregistrer l'image : "
+    nom_repertoire = input("Entrez le répertoire dans lequel vous souhaitez enregistrer l'image : ")
     imgnew.save("image_avec_message_codé.png")
     shutil.copy2("image_avec_message_codé.png", nom_repertoire)
     os.remove("image_avec_message_codé.png")
