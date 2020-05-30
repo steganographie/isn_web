@@ -1,4 +1,4 @@
-#isn_web
+# isn_web
 
 Code en Python par BEUDOT Nohan et BRUNO Paul, 714.
 
