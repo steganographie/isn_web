@@ -66,8 +66,8 @@ img#pres
 
 img#logo
 {
-    width: 10%;
-    height: 10%;
+    width: 30%;
+    height: 30%;
 }
 
 section article
@@ -83,4 +83,5 @@ section article
     font-size:120%;
     font-weight: lighter;
     margin: 0 auto;
+    margin-bottom:5%;
 }
