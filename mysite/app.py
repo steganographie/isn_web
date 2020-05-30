@@ -28,14 +28,14 @@ def SomeFunction():
     taille.sort(reverse=False)
     if taille[0] == red_sum:
         couleur_acc = list(r.getdata())
-        print("Couleur la moins présente : rouge")
+        print("Couleur la moins presente : rouge")
     if taille[0] == green_sum:
         couleur_acc = list(g.getdata())
-        print("Couleur la moins présente : vert")
+        print("Couleur la moins presente : vert")
     if taille[0] == blue_sum:
         couleur_acc = list(b.getdata())
-        print("Couleur la moins présente : bleu")
-    c = input("Entrez le texte qui sera encodé dans l'image : ")
+        print("Couleur la moins presente : bleu")
+    c = input("Entrez le texte qui sera encode dans l'image : ")
     u = len(c)
     v = bin(u)[2:].rjust(8, "0")
     ascii = [bin(ord(i))[2:].rjust(8, "0") for i in c]
@@ -52,8 +52,8 @@ def SomeFunction():
         imgnew = Image.merge('RGB', (r, couleur_modifiee, b))
     if taille[0] == blue_sum:
         imgnew = Image.merge('RGB', (r, g, couleur_modifiee))
-    nom_repertoire = input("Entrez le répertoire dans lequel vous souhaitez enregistrer l'image : ")
-    imgnew.save("image_avec_message_codé.png")
+    nom_repertoire = input("Entrez le repertoire dans lequel vous souhaitez enregistrer l'image : ")
+    imgnew.save("image_avec_message_code.png")
     shutil.copy2("image_avec_message_codé.png", nom_repertoire)
     os.remove("image_avec_message_codé.png")
 
