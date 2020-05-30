@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+body
+{
+    position: relative;
+    background-color: #f2f2f2;
+    font-family: 'Comfortaa', cursive;
+}
+
+header
+{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+header h1
+{
+    padding: 3%;
+}
+
+section
+{
+    text-align: center;
+    width:100%;
+    margin:0 auto;
+    min-height: 100%;
+    bottom:0;
+    position: relative;
+    margin-bottom: 25%;
+}
+
+section input
+{
+    font-size: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 5%;
+}
+
+footer
+{
+    background-color: #CACACA;
+    position: absolute;
+    border-top: 2px solid black;
+    text-align:center;
+    width:100%;
+}
+
+section div#pict
+{
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+img
+{
+    width: 23%;
+    height: 23%;
+    margin: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section article
+{
+    width: 40%;
+    background-color:gainsboro;
+    border: thick;
+    border-top: 4px solid rgba(0,0,0,1);
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    box-shadow: 2px 2px 2px rgba(121,121,121,1);
+    padding:1%;
+    font-size:120%;
+    font-weight: lighter;
+    margin: 0 auto;
+}
