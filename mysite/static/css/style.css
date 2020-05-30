@@ -16,6 +16,8 @@ header
 header h1
 {
     padding: 3%;
+    animation-duration: 2s;
+    animation-name: mon_animation_texte;
 }
 
 section
@@ -74,4 +76,17 @@ section article
     font-size:120%;
     font-weight: lighter;
     margin: 0 auto;
+}
+
+@keyframes mon_animation_texte
+{
+    from
+    {
+        margin-left: 100%;
+    }
+
+    to
+    {
+        margin-left: 0;
+    }
 }
